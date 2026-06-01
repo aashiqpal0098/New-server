@@ -1,3 +1,8 @@
+import os
+# Render ke liye Chrome path
+if os.environ.get('RENDER'):
+    chrome_path = "/opt/render/project/.render/chrome/opt/google/chrome/google-chrome"
+    os.environ['WEBDRIVER_CHROME_PATH'] = chrome_path
 # aashiq_pal.py - Complete AutoMsg System (2 files total)
 import os
 import threading
